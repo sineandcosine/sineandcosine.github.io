@@ -88,12 +88,12 @@
     </div>
     <script>
         var cur = document.getElementById('cursor');
-        document.addEventListener('selectstart', function (e) {
+        window.addEventListener('selectstart', function (e) {
             e.preventDefault();
         });
-        document.addEventListener('mousemove', function (e) {
-            cur.style.left = e.clientX + 2 + 'px';
-            cur.style.top = e.clientY + 2 + 'px';
+        window.addEventListener('mousemove', function (e) {
+            cur.style.left = e.pageX + 2 + 'px';
+            cur.style.top = e.pageY + 2 + 'px';
         });
     </script>
 </body>

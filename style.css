@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+}
+a {
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+a:hover {
+    color: blue;
+    background-color: pink;
+}
+
+#cursor {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+}
+h1 {
+    padding: 10px;
+    margin: 10px;
+    clear: both;
+}
+body {
+    margin: 0 auto;
+}
+.head-nav {
+    height: 120px;
+    width: 100%;
+    background-color: pink;
+}
+.left-nav {
+    width: 200px;
+    height: auto;
+    background-color: skyblue;
+    float: left;
+}
+.main {
+    margin: 0 auto;
+    width: 1000px;
+    background-color: gainsboro;
+}
+pre {
+/* 设置代码块的样式 */
+    background-color: #f8f8f8;
+    padding: 10px;
+    border: 30px solid #ccc;
+    overflow: auto;
+    font-family: 'consolas';
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.cpp {
+/* 设置代码语言为 C++，可以根据需要设置其他语言 */
+counter-reset: line;
+}
+
+.cpp code:before {
+/* 设置行号的样式 */
+content: counter(line);
+counter-increment: line;
+display: inline-block;
+width: 2em;
+text-align: right;
+margin-right: 1em;
+color: #999;
+}
+
+.keyword {
+/* 设置关键字的样式 */
+color: #007bff; /* 使用蓝色作为关键字的颜色 */
+font-weight: bold; /* 设置关键字的粗体 */
+}
+
+.variable {
+/* 设置变量名的样式 */
+color: #28a745; /* 使用绿色作为变量名的颜色 */
+}
+
+.number {
+/* 设置数字的样式 */
+color: #dc3545; /* 使用红色作为数字的颜色 */
+}
+
+.function {
+/* 设置函数名的样式 */
+color: #6f42c1; /* 使用紫色作为函数名的颜色 */
+}
+
+.string {
+/* 设置字符串的样式 */
+color: #e83e8c; /* 使用粉红色作为字符串的颜色 */
+}
+
+a{  
+    text-decoration: none;
+}
